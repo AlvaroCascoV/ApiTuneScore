@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using System.Text.Json.Serialization;
 using Scalar.AspNetCore;
 using ApiTuneScore.Data;
 using ApiTuneScore.HealthChecks;
@@ -17,7 +18,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("appsettings.Secrets.json", optional: false, reloadOnChange: true);
 
 // ── Controllers & OpenAPI ────────────────────────────────────────────────────
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
 builder.Services.AddOpenApi();
 
 // ── CORS ─────────────────────────────────────────────────────────────────────

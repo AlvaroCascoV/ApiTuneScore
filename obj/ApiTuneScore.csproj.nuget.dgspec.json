@@ -10,7 +10,7 @@
         "projectUniqueName": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
         "projectName": "ApiTuneScore",
         "projectPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
-        "packagesPath": "/var/folders/kk/g7pw4bs968gbny_w26k965x40000gn/T/cursor-sandbox-cache/7ff4f7cd34c84952ad6fbeb71067bd90/nuget",
+        "packagesPath": "/Users/alvarocascovalero/.nuget/packages/",
         "outputPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
