@@ -1,33 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\ApiTuneScore.csproj": {}
+    "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\ApiTuneScore.csproj": {
+    "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\ApiTuneScore.csproj",
+        "projectUniqueName": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
         "projectName": "ApiTuneScore",
-        "projectPath": "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\ApiTuneScore.csproj",
-        "packagesPath": "C:\\Users\\Alumnos MCSD Mañana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\obj\\",
+        "projectPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
+        "packagesPath": "/var/folders/kk/g7pw4bs968gbny_w26k965x40000gn/T/cursor-sandbox-cache/7ff4f7cd34c84952ad6fbeb71067bd90/nuget",
+        "outputPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\NuGet.Config",
-          "C:\\Users\\Alumnos MCSD Mañana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/NuGet.Config",
+          "/Users/alvarocascovalero/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/opt/homebrew/Cellar/dotnet/10.0.103/libexec/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -106,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.103/libexec/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
