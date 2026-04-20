@@ -13,6 +13,9 @@ using ApiTuneScore.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Optional local secrets file (gitignored), useful when you want to view/edit secrets as JSON.
+builder.Configuration.AddJsonFile("appsettings.Secrets.json", optional: true, reloadOnChange: true);
+
 // ── Controllers & OpenAPI ────────────────────────────────────────────────────
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
@@ -31,9 +34,18 @@ builder.Services.AddCors(options =>
 });
 
 // ── Database ──────────────────────────────────────────────────────────────────
-var connectionString = OperatingSystem.IsWindows()
-    ? builder.Configuration.GetConnectionString("TuneScoreDBLocal")
-    : builder.Configuration.GetConnectionString("TuneScoreDBMac");
+string? connectionString =
+    builder.Configuration.GetConnectionString("TuneScoreDBAzure")
+    ?? (OperatingSystem.IsWindows()
+        ? builder.Configuration.GetConnectionString("TuneScoreDBLocal")
+        : builder.Configuration.GetConnectionString("TuneScoreDBMac"));
+
+if (string.IsNullOrWhiteSpace(connectionString))
+{
+    throw new InvalidOperationException(
+        "No database connection string was found. Configure ConnectionStrings:TuneScoreDBAzure " +
+        "or a local fallback (TuneScoreDBLocal/TuneScoreDBMac).");
+}
 
 builder.Services.AddDbContext<TuneScoreContext>(options =>
     options.UseSqlServer(connectionString));

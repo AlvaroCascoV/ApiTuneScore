@@ -163,3 +163,5 @@
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/Debug/net10.0/ApiTuneScore.pdb
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/Debug/net10.0/ApiTuneScore.genruntimeconfig.cache
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/Debug/net10.0/ref/ApiTuneScore.dll
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/Debug/net10.0/ApiTuneScore.sourcelink.json
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/bin/Debug/net10.0/appsettings.Secrets.json
