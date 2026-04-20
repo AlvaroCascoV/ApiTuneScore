@@ -1,0 +1,1801 @@
+[
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "ConfirmDeleteAlbum",
+    "RelativePath": "api/Admin/albums/{id}/confirm-delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Confirms and executes deletion of an album previously flagged for delete review."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "DismissDeleteAlbum",
+    "RelativePath": "api/Admin/albums/{id}/dismiss-delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Dismisses an album delete request and clears its delete-requested flag."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetAllRequests",
+    "RelativePath": "api/Admin/artist-requests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns all artist link requests, including approved and rejected."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "ApproveRequest",
+    "RelativePath": "api/Admin/artist-requests/{id}/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Approves an artist link request and links the target user to the requested artist profile."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "RejectRequest",
+    "RelativePath": "api/Admin/artist-requests/{id}/reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Rejects an artist link request."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetPendingRequests",
+    "RelativePath": "api/Admin/artist-requests/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns artist link requests currently pending admin review."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetCityLocations",
+    "RelativePath": "api/Admin/city-locations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns city location records, optionally filtered by city or country."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "CreateCityLocation",
+    "RelativePath": "api/Admin/city-locations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.CityLocationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Creates a city location record with geographic coordinates."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetCityLocation",
+    "RelativePath": "api/Admin/city-locations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a single city location record by identifier."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "UpdateCityLocation",
+    "RelativePath": "api/Admin/city-locations/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.CityLocationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates an existing city location record."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "DeleteCityLocation",
+    "RelativePath": "api/Admin/city-locations/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Deletes a city location record."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetPlaylists",
+    "RelativePath": "api/Admin/playlists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns up to 200 playlists for moderation, with optional text search."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetPlaylist",
+    "RelativePath": "api/Admin/playlists/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns full details of a single playlist, including owner and songs."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "UpdatePlaylist",
+    "RelativePath": "api/Admin/playlists/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.AdminUpdatePlaylistRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates playlist metadata from the admin panel."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "DeletePlaylist",
+    "RelativePath": "api/Admin/playlists/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Deletes a playlist from the system."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetRatings",
+    "RelativePath": "api/Admin/ratings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns up to 300 ratings for moderation, with optional search by user, email, song, or comment."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetRating",
+    "RelativePath": "api/Admin/ratings/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns full details of a single rating."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "UpdateRating",
+    "RelativePath": "api/Admin/ratings/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.AdminUpdateRatingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates a rating score (1-10)."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "DeleteRating",
+    "RelativePath": "api/Admin/ratings/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Deletes a rating."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "ConfirmDeleteSong",
+    "RelativePath": "api/Admin/songs/{id}/confirm-delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Confirms and executes deletion of a song previously flagged for delete review."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "DismissDeleteSong",
+    "RelativePath": "api/Admin/songs/{id}/dismiss-delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Dismisses a song delete request and clears its delete-requested flag."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Admin/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns up to 200 users for admin management, with optional username/email search."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "GetUser",
+    "RelativePath": "api/Admin/users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns detailed admin view of a single user, including playlist and rating counts."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Admin/users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Deletes a user account and related user-owned data. Admin cannot delete their own account."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AdminController",
+    "Method": "ToggleDisable",
+    "RelativePath": "api/Admin/users/{id}/toggle-disable",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.ToggleDisableRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Enables or disables a user account. Admin cannot disable their own account."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "GetPage",
+    "RelativePath": "api/Albums",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a paginated list of albums. Supports optional text search across title."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "Create",
+    "RelativePath": "api/Albums",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.CreateAlbumRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Admins create albums as Approved. Artists create albums as Pending \u2014 they require admin approval before becoming visible."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "GetById",
+    "RelativePath": "api/Albums/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a single album. Artists can only see their own pending albums; admins see all."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "Update",
+    "RelativePath": "api/Albums/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.UpdateAlbumRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates title, release year, artist, and cover image of an existing album."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "Delete",
+    "RelativePath": "api/Albums/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Permanently deletes an album and its associated songs. Use confirm-delete under /api/admin for artist-requested deletions."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "Approve",
+    "RelativePath": "api/Albums/{id}/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Marks a pending album as Approved, making it publicly visible."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "Reject",
+    "RelativePath": "api/Albums/{id}/reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Rejects a pending album submission. The album is removed from the pending queue."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "RequestDelete",
+    "RelativePath": "api/Albums/{id}/request-delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Flags an album for deletion. Admins can then confirm or dismiss the request via /api/admin/albums/{id}/confirm-delete or dismiss-delete."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "GetSummary",
+    "RelativePath": "api/Albums/{id}/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns aggregated rating statistics (average score, count, user\u0027s own rating) for the given album."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "GetByArtist",
+    "RelativePath": "api/Albums/artist/{artistId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artistId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns all albums belonging to the given artist."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "GetDeleteRequested",
+    "RelativePath": "api/Albums/delete-requested",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns albums for which an artist has requested deletion. Admin must confirm or dismiss each request."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AlbumsController",
+    "Method": "GetPending",
+    "RelativePath": "api/Albums/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns albums submitted by artists that are awaiting admin approval."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.ArtistsController",
+    "Method": "GetPage",
+    "RelativePath": "api/Artists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a paginated list of artists, with optional text search by name."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.ArtistsController",
+    "Method": "Create",
+    "RelativePath": "api/Artists",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.CreateArtistRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Creates a new artist. If city and country are provided, coordinates are resolved automatically."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.ArtistsController",
+    "Method": "GetById",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a single artist with its related albums."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.ArtistsController",
+    "Method": "Update",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.UpdateArtistRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates artist profile data, including location and optional coordinates."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.ArtistsController",
+    "Method": "Delete",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Deletes an artist if it has no dependent albums."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.ArtistsController",
+    "Method": "Approve",
+    "RelativePath": "api/Artists/{id}/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Approves an artist entry, marking it as active/approved in the catalog."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.ArtistsController",
+    "Method": "GetSummary",
+    "RelativePath": "api/Artists/{id}/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns aggregated rating statistics for the specified artist."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.ArtistsController",
+    "Method": "GetActive",
+    "RelativePath": "api/Artists/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns only active artists."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Auth/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.ForgotPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Starts password reset flow by generating and emailing a reset OTP if the account exists."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ApiTuneScore.Models.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Authenticates user credentials and returns a JWT token when login succeeds."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ApiTuneScore.Models.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Registers a new account and sends an email verification code (OTP)."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Auth/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.ResetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Resets the user\u0027s password using a valid, non-expired OTP reset code."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.AuthController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/Auth/verify-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.VerifyEmailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Verifies a user\u0027s email using the OTP code previously sent by email."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.CommentsController",
+    "Method": "GetForSong",
+    "RelativePath": "api/comments/song/{songId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns comments and replies for a song, including vote and visibility context for the current user."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.CommentsController",
+    "Method": "CreateComment",
+    "RelativePath": "api/comments/song/{songId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.CreateCommentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Creates a top-level comment for a song, optionally linked to an existing rating."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.CommentsController",
+    "Method": "Update",
+    "RelativePath": "api/comments/song/{songId}/{commentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.UpdateCommentRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "songId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates the text content of an existing comment or reply."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.CommentsController",
+    "Method": "Delete",
+    "RelativePath": "api/comments/song/{songId}/{commentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "songId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Deletes a comment. Parent comments are removed together with their replies."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.CommentsController",
+    "Method": "CreateReply",
+    "RelativePath": "api/comments/song/{songId}/{commentId}/replies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.CreateReplyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Creates a reply under an existing parent comment for the same song."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.CommentsController",
+    "Method": "Vote",
+    "RelativePath": "api/comments/song/{songId}/{commentId}/votes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.VoteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Creates or updates the current user\u0027s vote for a specific comment."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.GenresController",
+    "Method": "GetAll",
+    "RelativePath": "api/Genres",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns all music genres."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.GenresController",
+    "Method": "Create",
+    "RelativePath": "api/Genres",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.CreateGenreRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Creates a new genre. Admin role required."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.GenresController",
+    "Method": "GetById",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a single genre by identifier."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.GenresController",
+    "Method": "Update",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.UpdateGenreRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates an existing genre name. Admin role required."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.GenresController",
+    "Method": "Delete",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Deletes a genre by identifier. Admin role required."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.HealthController",
+    "Method": "Get",
+    "RelativePath": "api/Health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Runs all registered health checks and returns overall service health."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.HealthController",
+    "Method": "GetReady",
+    "RelativePath": "api/Health/ready",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Runs readiness checks only (currently the database check tagged as ready)."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.HealthController",
+    "Method": "Wake",
+    "RelativePath": "api/Health/wake",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Checks database connectivity and helps wake up auto-paused Azure SQL instances."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "Create",
+    "RelativePath": "api/Playlists",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.CreatePlaylistRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Creates a new playlist for the authenticated user."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "GetById",
+    "RelativePath": "api/Playlists/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a playlist with its current metadata and contents."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "Update",
+    "RelativePath": "api/Playlists/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.UpdatePlaylistRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates playlist name, description, and cover image metadata."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "Delete",
+    "RelativePath": "api/Playlists/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Deletes a playlist by identifier."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "AddAlbum",
+    "RelativePath": "api/Playlists/{id}/albums",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.PlaylistAlbumRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Adds all songs from an album into the playlist and returns how many were added."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "RemoveCover",
+    "RelativePath": "api/Playlists/{id}/cover",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Removes the playlist cover image. Allowed for owner or admin."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "RecommendedSongs",
+    "RelativePath": "api/Playlists/{id}/recommended-songs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns recommended songs not currently included in the playlist."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "Reorder",
+    "RelativePath": "api/Playlists/{id}/reorder",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.ReorderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Reorders playlist songs using the provided song ID sequence."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "AddSong",
+    "RelativePath": "api/Playlists/{id}/songs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.PlaylistSongRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Adds a song to the playlist if it is not already present."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "RemoveSong",
+    "RelativePath": "api/Playlists/{playlistId}/songs/{songId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playlistId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Removes a single song from a playlist."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "Discover",
+    "RelativePath": "api/Playlists/discover",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns playlists from other users to help discovery."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "GetSummary",
+    "RelativePath": "api/Playlists/summary/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns aggregated rating statistics for a playlist."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.PlaylistsController",
+    "Method": "GetByUser",
+    "RelativePath": "api/Playlists/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns playlists created by the specified user."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.RatingsController",
+    "Method": "AlbumSummary",
+    "RelativePath": "api/Ratings/albums/{albumId}/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "albumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns rating summary for an album, including the current user\u0027s own rating when available."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.RatingsController",
+    "Method": "ArtistSummary",
+    "RelativePath": "api/Ratings/artists/{artistId}/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artistId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns rating summary for an artist, including the current user\u0027s own rating when available."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.RatingsController",
+    "Method": "PlaylistSummary",
+    "RelativePath": "api/Ratings/playlists/{playlistId}/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playlistId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns rating summary for a playlist, including the current user\u0027s own rating when available."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.RatingsController",
+    "Method": "UpsertSongRating",
+    "RelativePath": "api/Ratings/songs/{songId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.UpsertRatingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Creates or updates the authenticated user\u0027s rating and optional comment for a song."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.RatingsController",
+    "Method": "DeleteSongRating",
+    "RelativePath": "api/Ratings/songs/{songId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Deletes the authenticated user\u0027s rating for a song."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.RatingsController",
+    "Method": "SongSummary",
+    "RelativePath": "api/Ratings/songs/{songId}/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns rating summary for a song, including the current user\u0027s own rating when available."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.RatingsController",
+    "Method": "GetTop",
+    "RelativePath": "api/Ratings/top",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns top-rated songs, albums, artists, and playlists."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.RatingsController",
+    "Method": "GetByUser",
+    "RelativePath": "api/Ratings/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns ratings created by a specific user, optionally limited to a maximum number of results."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "GetPage",
+    "RelativePath": "api/Songs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a paginated list of songs with optional text search."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "Create",
+    "RelativePath": "api/Songs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.CreateSongRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Creates a new song. Admin submissions are approved immediately; artist submissions are pending."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "GetById",
+    "RelativePath": "api/Songs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a single song. Artists can only see their own pending songs; admins see all."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "Update",
+    "RelativePath": "api/Songs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.UpdateSongRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates song title, duration, album, and genre."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "Delete",
+    "RelativePath": "api/Songs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Permanently deletes a song. Admin role required."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "Approve",
+    "RelativePath": "api/Songs/{id}/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Approves a pending song submission."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "Reject",
+    "RelativePath": "api/Songs/{id}/reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Rejects a pending song submission."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "RequestDelete",
+    "RelativePath": "api/Songs/{id}/request-delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Flags a song for deletion review."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "GetSummary",
+    "RelativePath": "api/Songs/{id}/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns aggregated rating statistics for the specified song."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "GetByAlbum",
+    "RelativePath": "api/Songs/album/{albumId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "albumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns all songs that belong to the specified album."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "GetByArtist",
+    "RelativePath": "api/Songs/artist/{artistId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artistId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns all songs that belong to the specified artist."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "GetDeleteRequested",
+    "RelativePath": "api/Songs/delete-requested",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns songs flagged for deletion review by admin."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.SongsController",
+    "Method": "GetPending",
+    "RelativePath": "api/Songs/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Description": "Returns song submissions pending admin approval."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.UsersController",
+    "Method": "GetById",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns a user profile with safe, non-sensitive fields."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.UsersController",
+    "Method": "Update",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ApiTuneScore.Controllers.UpdateProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Updates a user profile. Allowed for the same user or admins."
+  },
+  {
+    "ContainingType": "ApiTuneScore.Controllers.UsersController",
+    "Method": "GetRatings",
+    "RelativePath": "api/Users/{id}/ratings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Description": "Returns ratings submitted by the specified user."
+  }
+]

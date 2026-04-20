@@ -891,7 +891,7 @@
           }
         }
       },
-      "NugetTuneScore/1.0.4": {
+      "NugetTuneScore/1.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.3"
@@ -2971,16 +2971,17 @@
         "packageIcon.png"
       ]
     },
-    "NugetTuneScore/1.0.4": {
-      "sha512": "I5sypsv3vze+uWdGi08zBeN5DPOurV/k/6R3jlUc35gGdZFe2Xob1qvaeQ6KnfoBQ19AEEEkYHnOCw0SEp7HHA==",
+    "NugetTuneScore/1.0.5": {
+      "sha512": "yjlYoZgGYx3anF/1OZKdbylvK2lUHoJ3XbBae43tBg5d1YVDEXbvmJqPE3c/wBmbgEz4uOgom580gUJM46RttA==",
       "type": "package",
-      "path": "nugettunescore/1.0.4",
+      "path": "nugettunescore/1.0.5",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE",
         "README.md",
         "lib/net10.0/NugetTuneScore.dll",
-        "nugettunescore.1.0.4.nupkg.sha512",
+        "nugettunescore.1.0.5.nupkg.sha512",
         "nugettunescore.nuspec"
       ]
     },
@@ -3368,32 +3369,38 @@
       "Microsoft.EntityFrameworkCore >= 10.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.3",
-      "NugetTuneScore >= 1.0.4",
+      "NugetTuneScore >= 1.0.5",
       "Scalar.AspNetCore >= 2.14.1"
     ]
   },
   "packageFolders": {
-    "/Users/alvarocascovalero/.nuget/packages/": {}
+    "C:\\Users\\Alumnos MCSD Mañana\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
+      "projectUniqueName": "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\ApiTuneScore.csproj",
       "projectName": "ApiTuneScore",
-      "projectPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
-      "packagesPath": "/Users/alvarocascovalero/.nuget/packages/",
-      "outputPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/",
+      "projectPath": "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\ApiTuneScore.csproj",
+      "packagesPath": "C:\\Users\\Alumnos MCSD Mañana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/NuGet.Config",
-        "/Users/alvarocascovalero/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Alumnos MCSD Mañana\\source\\repos\\AlvaroCascoV\\ApiTuneScore\\NuGet.Config",
+        "C:\\Users\\Alumnos MCSD Mañana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "/Users/alvarocascovalero/Documents/GitHub/NugetTuneScore/NugetTuneScore/bin/Debug/": {},
-        "/opt/homebrew/Cellar/dotnet/10.0.103/libexec/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3446,7 +3453,7 @@
           },
           "NugetTuneScore": {
             "target": "Package",
-            "version": "[1.0.4, )"
+            "version": "[1.0.5, )"
           },
           "Scalar.AspNetCore": {
             "target": "Package",
@@ -3472,7 +3479,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.103/libexec/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

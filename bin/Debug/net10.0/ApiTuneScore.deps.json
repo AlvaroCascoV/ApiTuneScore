@@ -14,7 +14,7 @@
           "Microsoft.EntityFrameworkCore": "10.0.3",
           "Microsoft.EntityFrameworkCore.Design": "10.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.3",
-          "NugetTuneScore": "1.0.4",
+          "NugetTuneScore": "1.0.5",
           "Scalar.AspNetCore": "2.14.1"
         },
         "runtime": {
@@ -470,17 +470,17 @@
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "6.2.0.0"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "6.2.0.0"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "6.2.0.0"
           }
         }
       },
@@ -694,14 +694,14 @@
           }
         }
       },
-      "NugetTuneScore/1.0.4": {
+      "NugetTuneScore/1.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.3"
         },
         "runtime": {
           "lib/net10.0/NugetTuneScore.dll": {
-            "assemblyVersion": "1.0.4.0",
-            "fileVersion": "1.0.4.0"
+            "assemblyVersion": "1.0.5.0",
+            "fileVersion": "1.0.5.0"
           }
         }
       },
@@ -1098,12 +1098,12 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
-    "NugetTuneScore/1.0.4": {
+    "NugetTuneScore/1.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-I5sypsv3vze+uWdGi08zBeN5DPOurV/k/6R3jlUc35gGdZFe2Xob1qvaeQ6KnfoBQ19AEEEkYHnOCw0SEp7HHA==",
-      "path": "nugettunescore/1.0.4",
-      "hashPath": "nugettunescore.1.0.4.nupkg.sha512"
+      "sha512": "sha512-yjlYoZgGYx3anF/1OZKdbylvK2lUHoJ3XbBae43tBg5d1YVDEXbvmJqPE3c/wBmbgEz4uOgom580gUJM46RttA==",
+      "path": "nugettunescore/1.0.5",
+      "hashPath": "nugettunescore.1.0.5.nupkg.sha512"
     },
     "Scalar.AspNetCore/2.14.1": {
       "type": "package",
