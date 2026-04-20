@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -16,7 +16,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="MailKit" Version="4.16.0" />
-    <PackageReference Include="NugetTuneScore" Version="1.0.4" />
+    <PackageReference Include="NugetTuneScore" Version="1.0.5" />
     <PackageReference Include="Scalar.AspNetCore" Version="2.14.1" />
   </ItemGroup>
 

@@ -14,7 +14,7 @@ using ApiTuneScore.Helpers;
 var builder = WebApplication.CreateBuilder(args);
 
 // Optional local secrets file (gitignored), useful when you want to view/edit secrets as JSON.
-builder.Configuration.AddJsonFile("appsettings.Secrets.json", optional: true, reloadOnChange: true);
+builder.Configuration.AddJsonFile("appsettings.Secrets.json", optional: false, reloadOnChange: true);
 
 // ── Controllers & OpenAPI ────────────────────────────────────────────────────
 builder.Services.AddControllers();
