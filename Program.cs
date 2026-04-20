@@ -100,11 +100,9 @@ builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
 // ── Pipeline ──────────────────────────────────────────────────────────────────
-if (app.Environment.IsDevelopment())
-{
     app.MapOpenApi();
     app.MapScalarApiReference();
-}
+
 
 app.UseHttpsRedirection();
 app.UseCors("TuneScoreCors");
