@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiTuneScore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db03ed066cc16e8a0901a7385b41337547abe75d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+253eb7496d61e6026635b178ae30f2776a4d0366")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiTuneScore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiTuneScore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
