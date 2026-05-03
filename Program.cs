@@ -11,11 +11,19 @@ using ApiTuneScore.Repositories.Interfaces;
 using ApiTuneScore.Services;
 using ApiTuneScore.Services.Interfaces;
 using ApiTuneScore.Helpers;
+using Azure.Extensions.AspNetCore.Configuration.Secrets;
+using Azure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Optional local secrets file (gitignored), useful when you want to view/edit secrets as JSON.
-builder.Configuration.AddJsonFile("appsettings.Secrets.json", optional: false, reloadOnChange: true);
+// Optional local secrets file (gitignored). In Azure, use Key Vault + app settings instead.
+builder.Configuration.AddJsonFile("appsettings.Secrets.json", optional: true, reloadOnChange: true);
+
+var keyVaultUri = builder.Configuration["KeyVault:VaultUri"];
+if (!string.IsNullOrWhiteSpace(keyVaultUri))
+{
+    builder.Configuration.AddAzureKeyVault(new Uri(keyVaultUri), new DefaultAzureCredential());
+}
 
 // ── Controllers & OpenAPI ────────────────────────────────────────────────────
 builder.Services.AddControllers()

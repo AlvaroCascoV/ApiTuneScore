@@ -7,7 +7,9 @@
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore.runtimeconfig.json
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore.pdb
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Azure.Core.dll
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Azure.Extensions.AspNetCore.Configuration.Secrets.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Azure.Identity.dll
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Azure.Security.KeyVault.Secrets.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/BouncyCastle.Cryptography.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/MailKit.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Microsoft.AspNetCore.Authentication.JwtBearer.dll

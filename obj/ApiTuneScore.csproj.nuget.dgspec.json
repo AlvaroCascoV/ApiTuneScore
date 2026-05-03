@@ -10,7 +10,7 @@
         "projectUniqueName": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
         "projectName": "ApiTuneScore",
         "projectPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
-        "packagesPath": "/Users/alvarocascovalero/.nuget/packages/",
+        "packagesPath": "/var/folders/kk/g7pw4bs968gbny_w26k965x40000gn/T/cursor-sandbox-cache/993f48e63272eea23699accdeea1abf6/nuget",
         "outputPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -46,6 +46,14 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Azure.Extensions.AspNetCore.Configuration.Secrets": {
+              "target": "Package",
+              "version": "[1.5.1, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
             "MailKit": {
               "target": "Package",
               "version": "[4.16.0, )"

@@ -333,3 +333,5 @@ C:/Users/Alumnos MCSD Mañana/source/repos/AlvaroCascoV/ApiTuneScore/obj/Release
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/Release/net10.0/ApiTuneScore.pdb
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/Release/net10.0/ApiTuneScore.genruntimeconfig.cache
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/Release/net10.0/ref/ApiTuneScore.dll
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/bin/Release/net10.0/Azure.Extensions.AspNetCore.Configuration.Secrets.dll
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/bin/Release/net10.0/Azure.Security.KeyVault.Secrets.dll
