@@ -35,7 +35,15 @@ public class AuthController : ControllerBase
         if (!user.IsEmailVerified) return Unauthorized(new { message = "Email not verified." });
 
         var fullUser = await _userService.GetUserByUsernameAsync(dto.Username);
-        var token = _oauthHelper.GenerateToken(user.Id, user.Username, user.Email, fullUser?.Role ?? Roles.User, fullUser?.ArtistId);
+        string token;
+        try
+        {
+            token = _oauthHelper.GenerateToken(user.Id, user.Username, user.Email, fullUser?.Role ?? Roles.User, fullUser?.ArtistId);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return StatusCode(StatusCodes.Status503ServiceUnavailable, new { message = "Authentication signing is not configured on the server.", detail = ex.Message });
+        }
 
         return Ok(new TokenResponseDto
         {

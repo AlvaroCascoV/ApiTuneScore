@@ -1,7 +1,8 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text.Json;
+using ApiTuneScore.Models;
 using Microsoft.IdentityModel.Tokens;
 
 namespace ApiTuneScore.Helpers;
@@ -35,18 +36,25 @@ public class HelperActionOAuthService
         };
     }
 
+    /// <summary>Mints a JWT with encrypted user profile in UserData and plain ClaimTypes.Role.</summary>
     public string GenerateToken(int userId, string username, string email, string role, int? artistId = null)
     {
-        var claims = new List<Claim>
+        var payload = new TokenUserPayload
         {
-            new Claim(ClaimTypes.NameIdentifier, userId.ToString()),
-            new Claim(ClaimTypes.Name, username),
-            new Claim(ClaimTypes.Email, email),
-            new Claim(ClaimTypes.Role, role)
+            UserId = userId,
+            Username = username,
+            Email = email,
+            ArtistId = artistId
         };
 
-        if (artistId.HasValue)
-            claims.Add(new Claim("ArtistId", artistId.Value.ToString()));
+        var json = JsonSerializer.Serialize(payload, JwtTokenPayloadSerializer.Options);
+        var userDataCipher = HelperCifrado.CifrarString(json);
+
+        var claims = new List<Claim>
+        {
+            new Claim("UserData", userDataCipher),
+            new Claim(ClaimTypes.Role, role)
+        };
 
         var credentials = new SigningCredentials(GetKeyToken(), SecurityAlgorithms.HmacSha256);
 

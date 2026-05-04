@@ -2,6 +2,7 @@ using ApiTuneScore.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Hosting;
 
 namespace ApiTuneScore.Controllers;
 
@@ -11,11 +12,13 @@ public class HealthController : ControllerBase
 {
     private readonly TuneScoreContext _context;
     private readonly HealthCheckService _healthChecks;
+    private readonly IHostEnvironment _environment;
 
-    public HealthController(TuneScoreContext context, HealthCheckService healthChecks)
+    public HealthController(TuneScoreContext context, HealthCheckService healthChecks, IHostEnvironment environment)
     {
         _context = context;
         _healthChecks = healthChecks;
+        _environment = environment;
     }
 
     [HttpGet]
@@ -56,9 +59,12 @@ public class HealthController : ControllerBase
         {
             return StatusCode(503, new { status = "unavailable", message = "Database connection timed out." });
         }
-        catch
+        catch (Exception ex)
         {
-            return StatusCode(503, new { status = "unavailable", message = "Database is unavailable." });
+            var message = "Database is unavailable.";
+            if (_environment.IsDevelopment())
+                message += " " + ex.GetType().Name + ": " + ex.Message;
+            return StatusCode(503, new { status = "unavailable", message });
         }
     }
 
@@ -72,7 +78,8 @@ public class HealthController : ControllerBase
                 name = e.Key,
                 status = e.Value.Status.ToString(),
                 description = e.Value.Description,
-                duration = e.Value.Duration.TotalMilliseconds
+                duration = e.Value.Duration.TotalMilliseconds,
+                error = e.Value.Exception?.Message
             })
         };
 

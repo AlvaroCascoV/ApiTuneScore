@@ -15,6 +15,7 @@
           "Microsoft.AspNetCore.OpenApi": "10.0.3",
           "Microsoft.EntityFrameworkCore": "10.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.3",
+          "Microsoft.Extensions.Azure": "1.14.0",
           "NugetTuneScore": "1.0.5",
           "Scalar.AspNetCore": "2.14.1"
         },
@@ -259,6 +260,17 @@
           "lib/net10.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
             "assemblyVersion": "10.0.3.0",
             "fileVersion": "10.0.326.7603"
+          }
+        }
+      },
+      "Microsoft.Extensions.Azure/1.14.0": {
+        "dependencies": {
+          "Azure.Core": "1.54.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Azure.dll": {
+            "assemblyVersion": "1.14.0.0",
+            "fileVersion": "1.1400.26.22302"
           }
         }
       },
@@ -564,6 +576,13 @@
       "sha512": "sha512-q0fUFQ4PG4uhKwP+D5dsvlDQbwNpEfWsag3HaoGzkkKj+OQ90ya9W0HuFtwigwEEqc/H1SzDZYUAv7Ya1hh5ow==",
       "path": "microsoft.entityframeworkcore.sqlserver/10.0.3",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.10.0.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Azure/1.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g4d2TLfbAiZeXBcGkJdgIl2ZzqMcepMUbECENgg4XXqDU8uGAUwBxJb6x2DBpF6BY09vrHO0Ug3xZcH+cVbMrQ==",
+      "path": "microsoft.extensions.azure/1.14.0",
+      "hashPath": "microsoft.extensions.azure.1.14.0.nupkg.sha512"
     },
     "Microsoft.Identity.Client/4.83.1": {
       "type": "package",

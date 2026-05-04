@@ -703,6 +703,22 @@
           }
         }
       },
+      "Microsoft.Extensions.Azure/1.14.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.53.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Azure.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Azure.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyModel/10.0.3": {
         "type": "package",
         "compile": {
@@ -2718,6 +2734,26 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
+    "Microsoft.Extensions.Azure/1.14.0": {
+      "sha512": "g4d2TLfbAiZeXBcGkJdgIl2ZzqMcepMUbECENgg4XXqDU8uGAUwBxJb6x2DBpF6BY09vrHO0Ug3xZcH+cVbMrQ==",
+      "type": "package",
+      "path": "microsoft.extensions.azure/1.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azureicon.png",
+        "lib/net10.0/Microsoft.Extensions.Azure.dll",
+        "lib/net10.0/Microsoft.Extensions.Azure.xml",
+        "lib/net8.0/Microsoft.Extensions.Azure.dll",
+        "lib/net8.0/Microsoft.Extensions.Azure.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Azure.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Azure.xml",
+        "microsoft.extensions.azure.1.14.0.nupkg.sha512",
+        "microsoft.extensions.azure.nuspec"
+      ]
+    },
     "Microsoft.Extensions.DependencyModel/10.0.3": {
       "sha512": "31kRjr1fgdJO1UZ/AsjL2noqwht+juHMQ8c/oh8CEsDhlM2+0zwVZVsZjxSfOFiPtn5+6kRGuvSbLAufAPT0kA==",
       "type": "package",
@@ -3475,12 +3511,13 @@
       "Microsoft.EntityFrameworkCore >= 10.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.3",
+      "Microsoft.Extensions.Azure >= 1.14.0",
       "NugetTuneScore >= 1.0.5",
       "Scalar.AspNetCore >= 2.14.1"
     ]
   },
   "packageFolders": {
-    "/var/folders/kk/g7pw4bs968gbny_w26k965x40000gn/T/cursor-sandbox-cache/993f48e63272eea23699accdeea1abf6/nuget": {}
+    "/Users/alvarocascovalero/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3488,7 +3525,7 @@
       "projectUniqueName": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
       "projectName": "ApiTuneScore",
       "projectPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
-      "packagesPath": "/var/folders/kk/g7pw4bs968gbny_w26k965x40000gn/T/cursor-sandbox-cache/993f48e63272eea23699accdeea1abf6/nuget",
+      "packagesPath": "/Users/alvarocascovalero/.nuget/packages/",
       "outputPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
@@ -3557,6 +3594,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[10.0.3, )"
+          },
+          "Microsoft.Extensions.Azure": {
+            "target": "Package",
+            "version": "[1.14.0, )"
           },
           "NugetTuneScore": {
             "target": "Package",

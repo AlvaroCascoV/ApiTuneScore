@@ -1,8 +1,16 @@
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/nuget.config
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/nuget.config
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/web.config
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/appsettings.Development.json
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/appsettings.json
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/appsettings.Secrets.json
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/ApiTuneScore.deps.json
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/ApiTuneScore.runtimeconfig.json
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/ApiTuneScore.staticwebassets.endpoints.json
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/appsettings.Development.json
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/appsettings.json
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/appsettings.Secrets.json
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore.runtimeconfig.json
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore.pdb

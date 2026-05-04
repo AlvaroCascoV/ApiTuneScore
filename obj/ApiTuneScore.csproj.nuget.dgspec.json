@@ -10,7 +10,7 @@
         "projectUniqueName": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
         "projectName": "ApiTuneScore",
         "projectPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/ApiTuneScore.csproj",
-        "packagesPath": "/var/folders/kk/g7pw4bs968gbny_w26k965x40000gn/T/cursor-sandbox-cache/993f48e63272eea23699accdeea1abf6/nuget",
+        "packagesPath": "/Users/alvarocascovalero/.nuget/packages/",
         "outputPath": "/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -79,6 +79,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[10.0.3, )"
+            },
+            "Microsoft.Extensions.Azure": {
+              "target": "Package",
+              "version": "[1.14.0, )"
             },
             "NugetTuneScore": {
               "target": "Package",
