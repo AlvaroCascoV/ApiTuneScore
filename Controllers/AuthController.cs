@@ -1,5 +1,7 @@
+using System.Security.Claims;
 using ApiTuneScore.Helpers;
 using ApiTuneScore.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NugetTuneScore.Constants;
 using NugetTuneScore.Helpers;
@@ -52,6 +54,34 @@ public class AuthController : ControllerBase
             Email = user.Email,
             Role = fullUser?.Role ?? Roles.User,
             ArtistId = fullUser?.ArtistId
+        });
+    }
+
+    /// <summary>Returns the authenticated user's profile (used by MVC after login to populate cookie claims).</summary>
+    [Authorize]
+    [HttpGet("me")]
+    [EndpointDescription("Returns id/username/email/role/artistId for the bearer token's user.")]
+    public IActionResult Me()
+    {
+        var idValue = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (!int.TryParse(idValue, out var id))
+            return Unauthorized();
+
+        var username = User.FindFirst(ClaimTypes.Name)?.Value ?? string.Empty;
+        var email = User.FindFirst(ClaimTypes.Email)?.Value;
+        var role = User.FindFirst(ClaimTypes.Role)?.Value;
+        if (string.IsNullOrWhiteSpace(role))
+            role = Roles.User;
+
+        int? artistId = int.TryParse(User.FindFirst("ArtistId")?.Value, out var aid) ? aid : null;
+
+        return Ok(new
+        {
+            id,
+            username,
+            email,
+            role,
+            artistId
         });
     }
 

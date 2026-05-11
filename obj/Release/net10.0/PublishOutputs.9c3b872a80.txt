@@ -1,16 +1,8 @@
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/nuget.config
-/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/nuget.config
-/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/web.config
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/appsettings.Development.json
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/appsettings.json
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/appsettings.Secrets.json
-/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/ApiTuneScore.deps.json
-/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/ApiTuneScore.runtimeconfig.json
-/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/ApiTuneScore.staticwebassets.endpoints.json
-/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/appsettings.Development.json
-/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/appsettings.json
-/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/publish/appsettings.Secrets.json
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore.runtimeconfig.json
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/ApiTuneScore.pdb
@@ -18,6 +10,8 @@
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Azure.Extensions.AspNetCore.Configuration.Secrets.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Azure.Identity.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Azure.Security.KeyVault.Secrets.dll
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Azure.Storage.Blobs.dll
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Azure.Storage.Common.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/BouncyCastle.Cryptography.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/MailKit.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -29,6 +23,7 @@
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Microsoft.Extensions.Azure.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Microsoft.Identity.Client.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Microsoft.Identity.Client.Extensions.Msal.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/Microsoft.IdentityModel.Abstractions.dll
@@ -45,6 +40,7 @@
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/System.ClientModel.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/System.Configuration.ConfigurationManager.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/System.IdentityModel.Tokens.Jwt.dll
+/Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/System.IO.Hashing.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/System.Memory.Data.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/System.Security.Cryptography.ProtectedData.dll
 /Users/alvarocascovalero/Documents/GitHub/ApiTuneScore/publish/cs/Microsoft.Data.SqlClient.resources.dll

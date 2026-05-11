@@ -20,6 +20,7 @@ using Microsoft.Extensions.Configuration;
 using System.Security.Claims;
 using System.Text.Json;
 using ApiTuneScore.Models;
+using Microsoft.AspNetCore.Http.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +46,16 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     });
 builder.Services.AddOpenApi();
+
+// ── Multipart (uploads) ───────────────────────────────────────────────────────
+var maxUploadBytes = builder.Configuration.GetValue<long?>("Storage:MaxUploadBytes");
+if (maxUploadBytes.HasValue && maxUploadBytes.Value > 0)
+{
+    builder.Services.Configure<FormOptions>(options =>
+    {
+        options.MultipartBodyLengthLimit = maxUploadBytes.Value;
+    });
+}
 
 // Request timing / path logging (see Logging:LogLevel in appsettings; Azure Log stream / console).
 builder.Services.AddHttpLogging(options =>
@@ -192,6 +203,9 @@ builder.Services.AddScoped<IContentVisibilityService, ContentVisibilityService>(
 builder.Services.AddHttpClient<IGeocodingService, GeocodingService>();
 
 builder.Services.AddHttpContextAccessor();
+
+// ── Storage (Azure Blob) ─────────────────────────────────────────────────────
+builder.Services.AddSingleton<StorageService>();
 
 // ── Build ─────────────────────────────────────────────────────────────────────
 var app = builder.Build();
